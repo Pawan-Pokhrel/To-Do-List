@@ -18,9 +18,13 @@ useEffect(() => {
   return (
     <div className="App">
       <div className="container">
-        <Header />
-        <Form input={input} setInput={setInput} tasks={tasks} setTasks={setTasks} editTask={editTask} setEditTask={setEditTask}/>
-        <Todolist tasks={tasks} setTasks={setTasks}  editTask={editTask} setEditTask={setEditTask}/>
+        <div className="to-do-list">
+          <Header />
+          <div className="form-container">
+            <Form input={input} setInput={setInput} tasks={tasks} setTasks={setTasks} editTask={editTask} setEditTask={setEditTask}/>
+          </div>
+          <Todolist tasks={tasks} setTasks={setTasks}  editTask={editTask} setEditTask={setEditTask}/>
+        </div>
       </div>
     </div>
   );
